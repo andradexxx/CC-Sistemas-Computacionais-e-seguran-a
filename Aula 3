@@ -1,0 +1,38 @@
+
+1. Ataque ao Sistema Siafi (abril de 2024)
+Data do ataque: Abril de 2024
+Tipo de ataque: Phishing e uso de certificados digitais fraudulentos
+Descrição do ataque: Em abril de 2024, o Sistema Integrado de Administração Financeira do Governo Federal (Siafi), responsável pelos pagamentos do governo federal, foi invadido. Os atacantes utilizaram técnicas de phishing para obter credenciais de acesso e empregaram certificados digitais falsos para autorizar pagamentos indevidos, desviando cerca de R$ 15 milhões. citeturn0search0
+Vulnerabilidade explorada: A principal vulnerabilidade explorada foi a falta de autenticação multifatorial robusta e a ausência de monitoramento adequado de transações financeiras no sistema. Não há indicação específica de um CVE associado a este incidente, pois envolveu principalmente falhas de processo e segurança interna.
+Impactos e/ou prejuízos: O ataque resultou no desvio de aproximadamente R$ 15 milhões dos cofres públicos. Além do prejuízo financeiro direto, houve danos à reputação das instituições envolvidas e um aumento na conscientização sobre a necessidade de reforçar a segurança cibernética em sistemas governamentais.
+Tipo de proteção que poderia ter sido aplicada para evitá-lo:
+Autenticação multifatorial (MFA): Implementação de MFA para todas as transações financeiras e acessos administrativos, dificultando o uso de credenciais comprometidas.
+
+
+Monitoramento e auditoria contínuos: Estabelecimento de sistemas de monitoramento em tempo real para detectar atividades suspeitas e transações não autorizadas.
+
+
+Treinamento de conscientização de segurança: Capacitação regular de funcionários para reconhecer e-mails de phishing e outras táticas de engenharia social.
+
+
+
+2. Ataque ao Hospital Real Português (agosto-setembro de 2024)
+Data do ataque: Entre agosto e setembro de 2024
+Tipo de ataque: Ransomware
+Descrição do ataque: O Real Hospital Português, localizado no Recife, sofreu um ataque de ransomware que paralisou sistemas críticos, incluindo acesso a históricos médicos e exames. A interrupção durou mais de uma semana, durante a qual houve até furtos de equipamentos médicos. Apesar disso, a integridade dos dados foi preservada. citeturn0search0
+Vulnerabilidade explorada: Embora detalhes específicos sobre a vulnerabilidade não tenham sido divulgados, ataques de ransomware geralmente exploram sistemas desatualizados, falta de backups adequados ou ausência de medidas de segurança robustas. Não foi identificado um CVE específico relacionado a este incidente.
+Impactos e/ou prejuízos: O ataque causou a suspensão de serviços médicos essenciais, afetando aproximadamente 100 pacientes que necessitavam de sessões de radioterapia. Além do impacto nos pacientes, houve danos à reputação do hospital e custos associados à recuperação dos sistemas e reforço das medidas de segurança.
+Tipo de proteção que poderia ter sido aplicada para evitá-lo:
+Backups regulares e seguros: Realização de backups frequentes e armazenamento seguro, garantindo a possibilidade de restaurar sistemas sem ceder a resgates.
+
+
+Segurança de endpoints: Implementação de soluções de segurança robustas em todos os dispositivos conectados à rede hospitalar para detectar e bloquear malware.
+
+
+Segmentação de rede: Divisão da rede em segmentos distintos para limitar a propagação de ataques e proteger dados sensíveis.
+
+
+Plano de resposta a incidentes: Desenvolvimento de um plano estruturado para responder rapidamente a ataques cibernéticos, minimizando danos e tempo de inatividade.
+
+
+
