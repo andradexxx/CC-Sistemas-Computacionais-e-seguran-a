@@ -1,6 +1,5 @@
 Sistemas-Computacionais-e-segurança
 1. Exemplos Históricos de Uso de Criptografia
-Aqui estão dois exemplos históricos não citados no material:
 
 Cifra de César (Roma Antiga): A Cifra de César é uma das técnicas de criptografia mais antigas. Ela foi utilizada por Júlio César para proteger suas mensagens militares. Essa cifra é uma cifra de substituição simples, onde cada letra do texto original é deslocada por um número fixo de posições no alfabeto. Por exemplo, com um deslocamento de 3, a letra "A" se torna "D".
 
@@ -8,8 +7,6 @@ Criptografia de Vigenère (Século XVI): A cifra de Vigenère foi inventada por 
 
 2. Algoritmos de Criptografia com Chaves Simétricas Utilizados Atualmente
 AES (Advanced Encryption Standard): O AES é um dos algoritmos de criptografia simétrica mais utilizados atualmente. Ele utiliza chaves de 128, 192 ou 256 bits e é muito eficiente para proteger dados em larga escala, sendo amplamente adotado em sistemas governamentais e corporativos.
-
-Blowfish: Blowfish é outro algoritmo de criptografia simétrica amplamente utilizado, conhecido por sua alta performance. Ele pode usar chaves de tamanhos variáveis de até 448 bits e é popular em diversas aplicações, incluindo sistemas de VPN e criptografia de arquivos.
 
 3. Algoritmos de Criptografia com Chaves Assimétricas Utilizados Atualmente
 RSA (Rivest-Shamir-Adleman): O RSA é um dos algoritmos de criptografia assimétrica mais conhecidos e amplamente usados. Ele é utilizado para troca de chaves seguras, assinatura digital e autenticação, com base em dois grandes números primos. Sua segurança está na dificuldade de fatoração de números grandes.
