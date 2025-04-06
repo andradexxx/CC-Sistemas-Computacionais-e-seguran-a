@@ -1,0 +1,46 @@
+import javax.crypto.Cipher;
+import java.security.KeyPair;
+import java.security.KeyPairGenerator;
+import java.security.PrivateKey;
+import java.security.PublicKey;
+import java.util.Base64;
+
+public class CryptoAssimetrica {
+
+    public static KeyPair gerarParDeChaves() throws Exception {
+        KeyPairGenerator keyGen = KeyPairGenerator.getInstance("RSA");
+        keyGen.initialize(2048);
+        return keyGen.generateKeyPair();
+    }
+
+    public static String criptografar(String mensagem, PublicKey chavePublica) throws Exception {
+        Cipher cipher = Cipher.getInstance("RSA");
+        cipher.init(Cipher.ENCRYPT_MODE, chavePublica);
+        byte[] mensagemCriptografada = cipher.doFinal(mensagem.getBytes());
+        return Base64.getEncoder().encodeToString(mensagemCriptografada);
+    }
+
+    public static String descriptografar(String mensagemCriptografada, PrivateKey chavePrivada) throws Exception {
+        Cipher cipher = Cipher.getInstance("RSA");
+        cipher.init(Cipher.DECRYPT_MODE, chavePrivada);
+        byte[] bytesCriptografados = Base64.getDecoder().decode(mensagemCriptografada);
+        byte[] mensagemOriginal = cipher.doFinal(bytesCriptografados);
+        return new String(mensagemOriginal);
+    }
+
+    public static void main(String[] args) throws Exception {
+
+        KeyPair parDeChaves = gerarParDeChaves();
+        PublicKey chavePublica = parDeChaves.getPublic();
+        PrivateKey chavePrivada = parDeChaves.getPrivate();
+
+        String mensagem = "Mensagem ultra secreta!";
+        System.out.println("Original: " + mensagem);
+
+        String criptografada = criptografar(mensagem, chavePublica);
+        System.out.println("Criptografada: " + criptografada);
+
+        String descriptografada = descriptografar(criptografada, chavePrivada);
+        System.out.println("Descriptografada: " + descriptografada);
+    }
+}
